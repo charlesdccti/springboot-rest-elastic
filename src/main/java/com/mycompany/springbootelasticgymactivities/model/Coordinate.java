@@ -9,9 +9,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Coordinate {
     
-    private String id;
+    // private String id;
     // podemos tentar um tipo float aqui
-    private String latutude;
-    private String longitude;
+    private Double latutude;
+    private Double longitude;
 
 }

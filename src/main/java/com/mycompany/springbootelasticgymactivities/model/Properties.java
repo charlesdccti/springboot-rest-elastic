@@ -1,5 +1,8 @@
 package com.mycompany.springbootelasticgymactivities.model;
 
+import org.springframework.data.elasticsearch.annotations.Field;
+import org.springframework.data.elasticsearch.annotations.FieldType;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,24 +12,24 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Properties {
 
-    private float ID;
-    private String NM_MUNICIP;
-    private float UF;
-    private String NM_REGIAO;
-    private float REGIAO;
-    private String SIGLA_UF;
-    private String NM_UF;
-    private float pop;
-    private float valor_indi;
-    private float decil_indi;
-    private float quintil_in;
-    private float renda_perc;
-    private float analf_7mai;
-    private float cond_habit;
-    private float Xmin;
-    private float Ymin;
-    private float Xmax;
-    private float Ymax;
-    private String bounds;
-    private float graf_barra;
+    public long ID;
+    public String NM_MUNICIP;
+    public long UF;
+    public String NM_REGIAO;
+    public long REGIAO;
+    public String SIGLA_UF;
+    public String NM_UF;
+    public float pop;
+    public float valor_indi;
+    public float decil_indi;
+    public float quintil_in;
+    public float renda_perc;
+    public float analf_7mai;
+    public float cond_habit;
+    public float Xmin;
+    public float Ymin;
+    public float Xmax;
+    public float Ymax;
+    public String bounds;
+    public float graf_barra;
 }

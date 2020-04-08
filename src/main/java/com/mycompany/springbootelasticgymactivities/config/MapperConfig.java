@@ -16,7 +16,7 @@ public class MapperConfig {
         DefaultMapperFactory defaultMapperFactory = new DefaultMapperFactory.Builder().useAutoMapping(true).build();
 
         defaultMapperFactory.classMap(UpdateActivityDto.class, Activity.class).mapNulls(false).byDefault().register();
-
+        
         return defaultMapperFactory;
     }
 

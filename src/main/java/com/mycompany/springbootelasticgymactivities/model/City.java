@@ -1,12 +1,14 @@
 package com.mycompany.springbootelasticgymactivities.model;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import java.util.Date;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
+import org.springframework.data.elasticsearch.annotations.Field;
+import org.springframework.data.elasticsearch.annotations.FieldType;
 
-import java.util.Date;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
@@ -16,11 +18,11 @@ public class City {
     @Id
     private String id;
     private String type;
-    //@Transient
-    // private Geometry geometry;
-    // private Properties properties;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-    private Date date;
+    @Field(type = FieldType.Object)
+    private Geometry geometry;
+    
+    @Field(type = FieldType.Object)
+    private Properties properties;
 
 }
