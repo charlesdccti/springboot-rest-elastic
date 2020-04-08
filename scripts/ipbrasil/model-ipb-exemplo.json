@@ -1,0 +1,40 @@
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -48.05263043,
+                    -4.81339674
+                ],
+                [
+                    -48.05836323,
+                    -4.80416002
+                ]
+            ]
+        ]
+    },
+    "properties": {
+        "ID": 2103257,
+        "NM_MUNICIP": "CIDELÂNDIA",
+        "UF": 21,
+        "NM_REGIAO": "Nordeste",
+        "REGIAO": 2,
+        "SIGLA_UF": "MA",
+        "NM_UF": "Maranhão",
+        "pop": 13681,
+        "valor_indi": 1.09015647,
+        "decil_indi": 10,
+        "quintil_in": 5,
+        "renda_perc": 63.42224745,
+        "analf_7mai": 23.0755999,
+        "cond_habit": 50.00913676,
+        "Xmin": -48.0584,
+        "Ymin": -5.3337,
+        "Xmax": -47.5387,
+        "Ymax": -4.7783,
+        "bounds": "-48.0584, -5.3337, -47.5387, -4.7783",
+        "graf_barra": 4082
+    }
+}

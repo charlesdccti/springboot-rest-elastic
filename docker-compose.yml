@@ -29,5 +29,7 @@ services:
     - "5601:5601"
     environment:
       ELASTICSEARCH_URL: http://elasticsearch:9200
+      # ELASTICSEARCH_URL: http://200.128.7.53:9300
+      # ELASTICSEARCH_REQUESTTIMEOUT: 60000
     healthcheck:
       test: "curl -f http://localhost:5601 || exit 1"
